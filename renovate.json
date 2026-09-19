@@ -18,6 +18,11 @@
   "minimumReleaseAge": "3 days",
   "packageRules": [
     {
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@types/node"],
+      "groupName": "Node.js"
+    },
+    {
       "extends": ["packages:stylelint"],
       "groupName": "Stylelint and plugins"
     }
